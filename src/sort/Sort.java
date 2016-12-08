@@ -35,9 +35,24 @@ public class Sort<K, V> implements ISort<K, V>{
 				}
 				
 			}
+			
+			
 		});
 		
 		return null;
+	}
+	
+}
+
+
+class MyComparator implements Comparator {
+
+	@Override
+	public int compare(Object o1, Object o2) {
+		if(o1.getClass().equals("Integer")){
+			return ;
+		}
+		return 0;
 	}
 	
 }
