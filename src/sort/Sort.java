@@ -27,7 +27,10 @@ public class Sort<K, V> implements ISort<K, V>{
 				
 				
 				if(arg0.getValue() != null && arg1.getValue() != null ){
-					return arg1.getValue() - arg0.getValue();
+					
+//					return arg1.getValue() - arg0.getValue();
+					return 0;
+					
 				}else if (arg0.getValue() != null && arg1.getValue() != null && arg0.getValue().toString().equals(arg1.getValue().toString())){
 					return 0;
 				}else{
